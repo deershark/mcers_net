@@ -23,6 +23,7 @@ export default function Page({ params: paramsPromise }: { params: Promise<{ play
           throw new Error('Player not found')
         }
       } catch (error) {
+        console.log(error)
         message.error(`无法找到该玩家: ${params.player_name}`)
         router.push('/')
       }

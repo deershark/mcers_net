@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Input, Button, message, Card, Row, Col } from 'antd';
+import { Input, Button, message, Card} from 'antd';
 import { useRouter } from 'next/navigation';
 
 const WEB_DOMAIN = process.env.NEXT_PUBLIC_WEB_DOMAIN

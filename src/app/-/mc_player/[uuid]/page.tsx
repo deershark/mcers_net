@@ -94,6 +94,7 @@ export default function Page({ params: paramsPromise }: { params: Promise<{ uuid
           ...hypixelData
         })
       } catch (error) {
+        console.log(error)
         message.error('无法获取玩家信息')
         router.push('/')
       } finally {
