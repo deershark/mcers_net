@@ -3,10 +3,12 @@
 import { useState } from 'react';
 import { Input, Button, message, Card} from 'antd';
 import { useRouter } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
 
 const WEB_DOMAIN = process.env.NEXT_PUBLIC_WEB_DOMAIN
 
 export default function Home() {
+  const { t } = useTranslation();
   const [playerName, setPlayerName] = useState('');
   const router = useRouter();
 
@@ -28,16 +30,16 @@ export default function Home() {
                 <path d="M13 9h-2V7h2v2zm0 4h-2v-2h2v2zm0 4h-2v-2h2v2z" />
                 <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" />
               </svg>
-              Minecraft 玩家查询
+              {t('Common.siteTitle')}
             </h1>
-            <p className="text-[#E0E0E0]">输入正版玩家名称获取详细游戏数据</p>
+            <p className="text-[#E0E0E0]">{t('Common.siteDescription')}</p>
           </div>
 
           <div className="mt-6">
             <div className="flex gap-2">
               <Input
                 size="large"
-                placeholder="输入玩家昵称..."
+                placeholder={t('Common.searchPlaceholder')}
                 value={playerName}
                 onChange={(e) => setPlayerName(e.target.value)}
                 onPressEnter={handleSearch}
@@ -51,11 +53,11 @@ export default function Home() {
                 size="large"
                 onClick={handleSearch}
               >
-                立即查询
+                {t('Common.searchButton')}
               </Button>
             </div>
             <div className="text-center text-sm text-[#A0A0A0] mt-2">
-              支持Java版和Hypixel服务器正版玩家数据查询
+              {t('Common.searchDescription')}
             </div>
           </div>
         </Card>
@@ -67,7 +69,7 @@ export default function Home() {
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
               </svg>
               <div className="text-[#E0E0E0]">
-                使用 <span className="text-[#3B8526] font-medium">{WEB_DOMAIN}/{"<游戏昵称>"}</span> 可以快速查看玩家信息嗷~
+                {t('Common.quickSearchTip', {domain: WEB_DOMAIN || '', playerName: '<游戏昵称>'})}
               </div>
             </div>
           </Card>

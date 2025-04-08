@@ -24,9 +24,13 @@ export async function GET(request: Request) {
     const profile = await res.json()
     
     // Decode textures property
-    if (profile.properties && profile.properties.length > 0) {
-      const textures = JSON.parse(Buffer.from(profile.properties[0].value, 'base64').toString())
-      profile.textures = textures
+    if (profile.properties && profile.properties.length > 0 && profile.properties[0].value) {
+      try {
+        const textures = JSON.parse(Buffer.from(profile.properties[0].value, 'base64').toString())
+        profile.textures = textures
+      } catch (error) {
+        console.error('Failed to decode textures:', error)
+      }
     }
 
     return NextResponse.json(profile)

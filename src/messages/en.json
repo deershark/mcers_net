@@ -1,0 +1,35 @@
+{
+  "Common": {
+    "chinese": "Chinese",
+    "english": "English",
+    "siteTitle": "Minecraft Player Lookup",
+    "siteDescription": "Quickly lookup Minecraft player data, supports Java Edition and Hypixel server, get detailed player information.",
+    "searchPlaceholder": "Enter player name...",
+    "searchButton": "Search Now",
+    "searchDescription": "Supports Java Edition and Hypixel server player data lookup",
+    "quickSearchTip": "Use {domain}/{playerName} to quickly view player info~"
+  },
+  "PlayerInfo": {
+    "title": "{playerName}'s Player Info",
+    "description": "View {playerName}'s Minecraft player information, including skin, achievements, Hypixel server data, etc.",
+    "unknownPlayer": "Unknown Player"
+  },
+  "playerInfo": {
+    "title": "Player Info - {name}",
+    "basicInfo": "Basic Info",
+    "playerId": "Player ID",
+    "playerInfo": "Player Info",
+    "skinInfo": "Skin Info",
+    "downloadSkin": "Download Skin",
+    "downloadCape": "Download Cape",
+    "achievements": "Achievements",
+    "totalAchievements": "Total Achievements",
+    "achievementPoints": "Achievement Points",
+    "serverData": "Server Data",
+    "userType": "User Type",
+    "lobbyLevel": "Lobby Level",
+    "karma": "Karma",
+    "registrationTime": "Registration Time",
+    "lastLogin": "Last Login"
+  }
+}

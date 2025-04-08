@@ -1,0 +1,35 @@
+{
+  "Common": {
+    "chinese": "中文",
+    "english": "English",
+    "siteTitle": "Minecraft 玩家查询",
+    "siteDescription": "快速查询Minecraft正版玩家游戏数据，支持Java版和Hypixel服务器，获取详细玩家信息。",
+    "searchPlaceholder": "输入玩家昵称...",
+    "searchButton": "立即查询",
+    "searchDescription": "支持Java版和Hypixel服务器正版玩家数据查询",
+    "quickSearchTip": "使用 {domain}/{playerName} 可以快速查看玩家信息嗷~"
+  },
+  "PlayerInfo": {
+    "title": "{playerName} 的玩家信息",
+    "description": "查看 {playerName} 的 Minecraft 玩家信息，包括皮肤、成就、Hypixel 服务器数据等。",
+    "unknownPlayer": "未知玩家"
+  },
+  "playerInfo": {
+    "title": "玩家信息 - {name}",
+    "basicInfo": "基本信息",
+    "playerId": "玩家ID",
+    "playerInfo": "玩家信息",
+    "skinInfo": "皮肤信息",
+    "downloadSkin": "下载皮肤",
+    "downloadCape": "下载披风",
+    "achievements": "成就",
+    "totalAchievements": "总成就数",
+    "achievementPoints": "成就点数",
+    "serverData": "服务器数据",
+    "userType": "用户类型",
+    "lobbyLevel": "大厅等级",
+    "karma": "人品值",
+    "registrationTime": "注册时间",
+    "lastLogin": "最后登录"
+  }
+}
